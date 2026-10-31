@@ -12,9 +12,10 @@ build, and the PC tests below pass. Nothing has played on a device yet.
 
 ## Controls
 
-The same as v0.5 (see [source/README.md](../source/README.md)): blue choir, green strings, white space, orange brass.
-The plugin takes no extra keys or encoders: on T1 the four encoders turn the four knobs as on any stock engine, and the
-T2 envelope and T4 LFO are the OS's.
+The same as v0.5: blue choir, green strings, white space, orange brass. The main [README](../README.md#what-the-encoders-do)
+has the encoder guide, with a screenshot for each encoder and the demo video (`media/opus/`). The plugin takes no
+extra keys or encoders: on T1 the four encoders turn the four knobs as on any stock engine, and the T2 envelope and T4
+LFO are the OS's.
 
 ## Install
 
@@ -86,6 +87,7 @@ Generated files:
 |---|---|---|
 | Sound match | Renders the port and v0.5 side by side for every MIDI note at 125 knob corners, across the envelope's attack, sustain and release (590 M samples), under ASan and UBSan. They differ by at most 3 in 32,768, from v0.5's full-velocity gain of 32766 / 32767. | `opus/test/run.sh OP1R_SRC PLUGIN_KIT` |
 | Page preview | Draws the T1 page at six knob states over the still art. | see `opus/test/page_preview.c` |
+| Screenshots and video | Runs the page at 30 frames a second and the engine through a stand-in for the OS's voice loop, along a knob script, and makes `media/opus/`'s screenshots and demo video. | see `opus/test/opus_video.c` and `opus_video.py` |
 | Art check | `plugin_tool.py svg` on the still art: 0 errors, 0 warnings. | |
 
 The sound match uses [op1r-src](https://github.com/pcppcp/op1r-src)'s host harness for v0.5. Nothing here runs the
