@@ -10,7 +10,8 @@ A custom Elden Ring engine for the OP-1
 | Folder | What |
 |---|---|
 | `source/` | The engine's C source, generated tables and art, preset generator, host test harness |
-| `release/` | The built `erdtree.knl` (v0.5, Hundekraft Workshop 3.0.x) with its SHA-256, the preset pack, the changelog; `older/` has v0.4 |
+| `release/` | The built `erdtree.knl` (v0.5, Hundekraft Workshop 3.0.x) with its SHA-256, the preset pack, the changelog; `older/` has v0.4; `opus/` has `erdtree.opmod` for Opus 2 |
+| `opus/` | The Opus 2 port: the plugin folder `sammi.erdtree/`, its art generator and PC tests ([opus/README.md](opus/README.md)) |
 | `media/` | Demo audio, preset tour, demo videos and the screen preview |
 | `social/` | Reddit and Discord announcement drafts |
 
