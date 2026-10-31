@@ -2,12 +2,22 @@
 A custom Elden Ring engine for the OP-1
 
 **erdtree** is an Elden Ring-inspired synth engine for the original OP-1. It plays like a small orchestra under the
-Erdtree, and each encoder brings in its own section. The engine comes in two builds:
+Erdtree, and each encoder brings in its own section.
 
-- **Opus 2:** `release/opus/erdtree.opmod`. Copy it into the OP-1's `mods` folder ([opus/README.md](opus/README.md)).
-- **Hundekraft Workshop 3.0.x:** `release/erdtree.knl` ([source/README.md](source/README.md)).
+## Download
 
-Both builds make the same sound, draw the same screen and load the same presets.
+**[Download erdtree.zip](https://github.com/SammiBabe666/Project_Erdtree/raw/main/erdtree.zip)**: nothing to build.
+Unzip it, pick the folder for the firmware mod your OP-1 runs, and follow `INSTALL.txt`.
+
+| In the zip | For |
+|---|---|
+| `Opus 2/erdtree.opmod` | [Opus 2](https://github.com/LizardMan245/opus) (core 2.6 or later): copy it into the OP-1's `mods` folder in disk mode and restart. |
+| `Hundekraft Workshop/erdtree.knl` | The [Hundekraft Workshop](https://hundekraft.github.io/op1-workshop/) 3.0.x: add it under "Your plugins" and update the OP-1. |
+| `presets/synth/erdtree/` | Eight sounds for either one: copy the `erdtree` folder into the OP-1 disk's `synth/` folder. |
+| `INSTALL.txt` | The steps for each, the presets and the encoders. |
+
+Both builds play the same sound, draw the same screen and load the same presets. The Opus 2 build has not run on an
+OP-1 yet: keep Opus's developer mode on while you try it.
 
 ![The erdtree screen with the "first grace" preset](media/opus/screen_first_grace.png)
 
@@ -52,6 +62,7 @@ theme's colours.
 | Folder | What |
 |---|---|
 | `source/` | The engine's C source, generated tables and art, preset generator, host test harness |
+| `erdtree.zip` | The download: both builds, the presets, `INSTALL.txt` |
 | `release/` | The built `erdtree.knl` (v0.5, Hundekraft Workshop 3.0.x) with its SHA-256, the preset pack, the changelog; `older/` has v0.4; `opus/` has `erdtree.opmod` for Opus 2 |
 | `opus/` | The Opus 2 port: the plugin folder `sammi.erdtree/`, its art generator and PC tests ([opus/README.md](opus/README.md)) |
 | `media/` | Demo audio, preset tour, demo videos and the screen preview; `opus/` has the Opus build's screenshots and demo video |
