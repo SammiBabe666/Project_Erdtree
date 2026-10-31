@@ -53,19 +53,20 @@ one section of the orchestra and animates its own part of the screen.
 | ![All four encoders at zero](media/opus/screen_all_zero.png) | ![All four encoders at full](media/opus/screen_all_full.png) |
 
 In each screenshot, one encoder is at full and the others are at zero. The screenshots and the video come from the
-Opus build's own page code, run on a PC (`opus/test/opus_video.c` and `opus_video.py`). The colours are the OP-1's
+Opus build's own page code, run on a PC (`opus/test/opus_video.c` and `opus_video.py` in the source zip). The colours are the OP-1's
 stock encoder colours: under an Opus colour theme, the crown, leaves, arcade windows and light shafts take that
 theme's colours.
 
-## Layout
+## What's here
 
-| Folder | What |
+| File or folder | What |
 |---|---|
-| `source/` | The engine's C source, generated tables and art, preset generator, host test harness |
-| `erdtree.zip` | The download: both builds, the presets, `INSTALL.txt` |
-| `release/` | The built `erdtree.knl` (v0.5, Hundekraft Workshop 3.0.x) with its SHA-256, the preset pack, the changelog; `older/` has v0.4; `opus/` has `erdtree.opmod` for Opus 2 |
-| `opus/` | The Opus 2 port: the plugin folder `sammi.erdtree/`, its art generator and PC tests ([opus/README.md](opus/README.md)) |
+| `erdtree.zip` | The download: both builds, the presets, `INSTALL.txt`, the licence |
+| `erdtree-source.zip` | The source and build files: the engine, the Opus 2 port, the tests, the built files, the changelog, the announcement drafts. Its `README.txt` says what is where. |
 | `media/` | Demo audio, preset tour, demo videos and the screen preview; `opus/` has the Opus build's screenshots and demo video |
-| `social/` | Reddit and Discord announcement drafts |
 
-`source/erdtree.svg` is the output of `python3 source/gen_svg.py`.
+## Licence
+
+GPL-3.0-or-later with the OP-1 firmware permission (`LICENSE` and `NOTICE` in both zips). The brass voice comes from
+Brassophone by nick (nvmsocool). Elden Ring and the Erdtree belong to FromSoftware and Bandai Namco: this is an
+unofficial fan tribute.

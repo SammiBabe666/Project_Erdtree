@@ -1,5 +1,0 @@
-# Not measured on an OP-1 yet: an estimate, so the core does not switch erdtree off on chords before it is measured.
-# v0.5's sound in the Blackfin instruction simulator: 22,100 cycles a voice with all three sections (source/README.md),
-# six voices 132,600, plus about 20 % for cache misses. Replace it with the device's figure: developer mode on, six-voice
-# chords on "leyndell hall", then "audio: worst N" in its details (the mods list, orange push).
-cycles 160000
