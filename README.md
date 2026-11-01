@@ -11,13 +11,15 @@ Unzip it, pick the folder for the firmware mod your OP-1 runs, and follow `INSTA
 
 | In the zip | For |
 |---|---|
-| `Opus 2/erdtree.opmod` | [Opus 2](https://github.com/LizardMan245/opus) (core 2.6 or later): copy it into the OP-1's `mods` folder in disk mode and restart. |
+| `Opus 2/erdtree.opmod` | [Opus 2](https://github.com/LizardMan245/opus) (core 2.8 or later): copy it into the OP-1's `mods` folder in disk mode and restart. |
 | `Hundekraft Workshop/erdtree.knl` | The [Hundekraft Workshop](https://hundekraft.github.io/op1-workshop/) 3.0.x: add it under "Your plugins" and update the OP-1. |
 | `presets/synth/erdtree/` | Eight sounds for either one: copy the `erdtree` folder into the OP-1 disk's `synth/` folder. |
 | `INSTALL.txt` | The steps for each, the presets and the encoders. |
 
-Both builds play the same sound, draw the same screen and load the same presets. The Opus 2 build has not run on an
-OP-1 yet: keep Opus's developer mode on while you try it.
+Both builds play the same sound, draw the same screen and load the same presets. The Opus 2 build is 0.6.1. Version 0.6.0
+loaded but stayed silent on an OP-1, most likely because Opus's CPU budget switched it off. 0.6.1 moves its tables to
+fast memory, draws the screen only when something changes, adds a `screen` setting (`animated` or `still`) and
+reports a realistic CPU figure. Keep Opus's developer mode on while you try it.
 
 ![The erdtree screen with the "first grace" preset](media/opus/screen_first_grace.png)
 
