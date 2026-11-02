@@ -4,27 +4,42 @@ A custom Elden Ring engine for the OP-1
 **erdtree** is an Elden Ring-inspired synth engine for the original OP-1. It plays like a small orchestra under the
 Erdtree, and each encoder brings in its own section.
 
-## Download
+## Download: pick your firmware
 
-**[Download erdtree.zip](https://github.com/SammiBabe666/Project_Erdtree/raw/main/erdtree.zip)**: nothing to build.
-Unzip it, pick the folder for the firmware mod your OP-1 runs, and follow `INSTALL.txt`.
+erdtree runs under two firmware mods for the OP-1, and each has **its own plugin and its own presets**. They are not
+interchangeable: use the zip for the mod your OP-1 runs.
 
-| In the zip | For |
-|---|---|
-| `Opus 2/erdtree.opmod` | [Opus 2](https://github.com/LizardMan245/opus) (core 2.8 or later): copy it into the OP-1's `mods` folder in disk mode and restart. |
-| `Hundekraft Workshop/erdtree.knl` | The [Hundekraft Workshop](https://hundekraft.github.io/op1-workshop/) 3.0.x: add it under "Your plugins" and update the OP-1. |
-| `presets/synth/erdtree/` | Eight sounds for either one: copy the `erdtree` folder into the OP-1 disk's `synth/` folder. |
-| `INSTALL.txt` | The steps for each, the presets and the encoders. |
+| Your OP-1 runs | Download | Plugin | Presets |
+|---|---|---|---|
+| [Opus 2](https://github.com/LizardMan245/opus) (core 2.8 or later) | **[erdtree-opus.zip](https://github.com/SammiBabe666/Project_Erdtree/raw/main/downloads/erdtree-opus.zip)** | `erdtree.opmod` 0.6.1 | the dark-fantasy collection: eight sounds made for Opus (coming: see below) |
+| The [Hundekraft Workshop](https://hundekraft.github.io/op1-workshop/) 3.0.x | **[erdtree-hundekraft.zip](https://github.com/SammiBabe666/Project_Erdtree/raw/main/downloads/erdtree-hundekraft.zip)** | `erdtree.knl` v0.5 | first grace, golden order and six more |
 
-Both builds play the same sound, draw the same screen and load the same presets. The Opus 2 build is 0.6.1. Version 0.6.0
-loaded but stayed silent on an OP-1, most likely because Opus's CPU budget switched it off. 0.6.1 moves its tables to
-fast memory, draws the screen only when something changes, adds a `screen` setting (`animated` or `still`) and
-reports a realistic CPU figure. Keep Opus's developer mode on while you try it.
+Unzip it and follow its `INSTALL.txt`.
 
-![The erdtree screen with the "first grace" preset](media/opus/screen_first_grace.png)
+- **Opus:** 0.6.0 loaded but stayed silent on an OP-1, most likely because Opus's CPU guard switched it off. 0.6.1 is
+  much lighter and has not been confirmed on a device yet: keep developer mode on while you try it. The eight Opus
+  presets are designed and measured, but their files wait on one detail of Opus's preset format. Until then, the
+  values are in [the preset guide](docs/preset-guide.md) to set up by hand.
+- **Hundekraft presets do not load on Opus**, and Opus presets do not load on the Workshop.
 
-**Demo video:** [media/opus/erdtree_opus_demo.mp4](media/opus/erdtree_opus_demo.mp4). It is 22 seconds, with sound.
-Each section comes in on its encoder while the screen follows: strings, then brass, choir and space.
+## Platforms
+
+| | Hundekraft Workshop | Opus 2 |
+|---|---|---|
+| Everything for it | [platforms/hundekraft/](platforms/hundekraft/) | [platforms/opus/](platforms/opus/) |
+| Read me (features, build, tests) | [README](platforms/hundekraft/README.md) | [README](platforms/opus/README.md) |
+| Install steps | [INSTALL.txt](platforms/hundekraft/INSTALL.txt) | [INSTALL.txt](platforms/opus/INSTALL.txt) |
+| Presets | [presets/](platforms/hundekraft/presets/) | [presets/](platforms/opus/presets/), one folder each |
+| Built plugin | [build/erdtree.knl](platforms/hundekraft/build/) | [build/erdtree.opmod](platforms/opus/build/) |
+| Build it | `scripts/build-platform/build-hundekraft.sh` | `scripts/build-platform/build-opus.sh` |
+
+Both play the same sound (checked sample by sample on a PC) and draw the same screen. What differs between them:
+[docs/platform-compatibility.md](docs/platform-compatibility.md).
+
+![The erdtree screen on Opus](platforms/opus/assets/screen_first_grace.png)
+
+**Demo video (Opus build):** [erdtree_opus_demo.mp4](platforms/opus/assets/erdtree_opus_demo.mp4), 22 seconds with
+sound. **The eight Opus presets, rendered on a PC:** [tour.mp3](platforms/opus/assets/presets/tour.mp3).
 
 ## What the encoders do
 
@@ -43,32 +58,33 @@ one section of the orchestra and animates its own part of the screen.
 - White is not a reverb. For the cathedral sound, put a reverb on the synth's effect slot.
 - The rest of the controls are the OS's own: the T2 envelope, the T4 LFO, and the effect on T3. No shift or FN
   layer is taken.
-- A new sound starts at the "first grace" settings: blue 10000, green 26000, white 12000, orange 16000. That is
-  mostly strings, some brass, a touch of choir and a little space.
+- A new sound starts at blue 10000, green 26000, white 12000, orange 16000: mostly strings, some brass, a touch of
+  choir and a little space.
 
 | Blue: choir | Green: strings |
 |---|---|
-| ![Blue at full, the rest at zero](media/opus/screen_blue_choir.png) | ![Green at full, the rest at zero](media/opus/screen_green_strings.png) |
+| ![Blue at full, the rest at zero](platforms/opus/assets/screen_blue_choir.png) | ![Green at full, the rest at zero](platforms/opus/assets/screen_green_strings.png) |
 | **White: space** | **Orange: brass** |
-| ![White at full, the rest at zero](media/opus/screen_white_space.png) | ![Orange at full, the rest at zero](media/opus/screen_orange_brass.png) |
+| ![White at full, the rest at zero](platforms/opus/assets/screen_white_space.png) | ![Orange at full, the rest at zero](platforms/opus/assets/screen_orange_brass.png) |
 | **All at zero** | **All at full** |
-| ![All four encoders at zero](media/opus/screen_all_zero.png) | ![All four encoders at full](media/opus/screen_all_full.png) |
+| ![All four encoders at zero](platforms/opus/assets/screen_all_zero.png) | ![All four encoders at full](platforms/opus/assets/screen_all_full.png) |
 
-In each screenshot, one encoder is at full and the others are at zero. The screenshots and the video come from the
-Opus build's own page code, run on a PC (`opus/test/opus_video.c` and `opus_video.py` in the source zip). The colours are the OP-1's
-stock encoder colours: under an Opus colour theme, the crown, leaves, arcade windows and light shafts take that
-theme's colours.
+In each screenshot, one encoder is at full and the others are at zero. They come from the Opus build's page code, run
+on a PC. Under an Opus colour theme, the crown, leaves, arcade windows and light shafts take that theme's colours.
 
 ## What's here
 
-| File or folder | What |
+| Folder | What |
 |---|---|
-| `erdtree.zip` | The download: both builds, the presets, `INSTALL.txt`, the licence |
-| `erdtree-source.zip` | The source and build files: the engine, the Opus 2 port, the tests, the built files, the changelog, the announcement drafts. Its `README.txt` says what is where. |
-| `media/` | Demo audio, preset tour, demo videos and the screen preview; `opus/` has the Opus build's screenshots and demo video |
+| `downloads/` | The two zips users install from |
+| `platforms/hundekraft/` | The Hundekraft Workshop build: source, presets, tests, assets, the built `.knl` |
+| `platforms/opus/` | The Opus 2 build: source, presets, tests, assets, the built `.opmod` |
+| `shared/` | Platform-independent notes only: how the engine makes its sound, what each preset collection is meant to be |
+| `scripts/` | `validate-presets/` checks every preset; `build-platform/` builds each platform and makes the zips |
+| `docs/` | [Overview](docs/overview.md), [platforms](docs/platform-compatibility.md), [presets](docs/preset-guide.md), [development](docs/development.md), [the Opus port report](docs/port-report.md), [changelog](docs/changelog.md) |
 
 ## Licence
 
-GPL-3.0-or-later with the OP-1 firmware permission (`LICENSE` and `NOTICE` in both zips). The brass voice comes from
-Brassophone by nick (nvmsocool). Elden Ring and the Erdtree belong to FromSoftware and Bandai Namco: this is an
+GPL-3.0-or-later with the OP-1 firmware permission (`LICENSE` and `NOTICE`, also in both zips). The brass voice comes
+from Brassophone by nick (nvmsocool). Elden Ring and the Erdtree belong to FromSoftware and Bandai Namco: this is an
 unofficial fan tribute.

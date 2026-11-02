@@ -1,0 +1,26 @@
+{
+  "name": "the hollow belfry",
+  "description": "Struck and left to ring: brass and choir hit at once and decay with no sustain, the brass darkening as it fades, far away and through the delay. Bell-like, not a true bell: erdtree has no inharmonic source.",
+  "knobs": {
+    "choir": 24000,
+    "strings": 0,
+    "space": 30000,
+    "brass": 32767
+  },
+  "adsr": [
+    64,
+    9000,
+    0,
+    12000
+  ],
+  "fx": {
+    "type": "delay",
+    "params": [
+      11200,
+      24000,
+      4000,
+      22000
+    ]
+  },
+  "octave": 0
+}

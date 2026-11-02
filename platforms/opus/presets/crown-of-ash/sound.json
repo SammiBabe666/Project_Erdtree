@@ -1,0 +1,26 @@
+{
+  "name": "crown of ash",
+  "description": "Majestic and warm: brass in front, strings under it, a little choir on top. Solemn and orchestral.",
+  "knobs": {
+    "choir": 9000,
+    "strings": 20000,
+    "space": 14000,
+    "brass": 28000
+  },
+  "adsr": [
+    1800,
+    11000,
+    29000,
+    11000
+  ],
+  "fx": {
+    "type": "spring",
+    "params": [
+      16448,
+      15000,
+      3000,
+      12000
+    ]
+  },
+  "octave": 0
+}

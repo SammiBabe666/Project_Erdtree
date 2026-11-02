@@ -1,0 +1,26 @@
+{
+  "name": "moonless vigil",
+  "description": "Quiet on purpose: soft, distant, darkened strings with a breath of choir, a slow swell and a slow fade.",
+  "knobs": {
+    "choir": 9000,
+    "strings": 20000,
+    "space": 32767,
+    "brass": 0
+  },
+  "adsr": [
+    9000,
+    16000,
+    24000,
+    14000
+  ],
+  "fx": {
+    "type": "spring",
+    "params": [
+      12000,
+      12000,
+      1500,
+      9000
+    ]
+  },
+  "octave": 0
+}

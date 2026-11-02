@@ -1,0 +1,26 @@
+{
+  "name": "grave of giants",
+  "description": "Heavy: brass near full an octave down, celli under it, darkened by distance.",
+  "knobs": {
+    "choir": 0,
+    "strings": 12000,
+    "space": 22000,
+    "brass": 29000
+  },
+  "adsr": [
+    1500,
+    12000,
+    30000,
+    10000
+  ],
+  "fx": {
+    "type": "grid",
+    "params": [
+      8000,
+      9000,
+      22000,
+      20000
+    ]
+  },
+  "octave": -1
+}

@@ -1,0 +1,26 @@
+{
+  "name": "vesperglass",
+  "description": "Fragile glass: the choir's harmonics alone, an octave up, shimmering and through the delay.",
+  "knobs": {
+    "choir": 30000,
+    "strings": 0,
+    "space": 6000,
+    "brass": 0
+  },
+  "adsr": [
+    3500,
+    14000,
+    22000,
+    13000
+  ],
+  "fx": {
+    "type": "delay",
+    "params": [
+      9000,
+      22000,
+      9000,
+      18000
+    ]
+  },
+  "octave": 1
+}

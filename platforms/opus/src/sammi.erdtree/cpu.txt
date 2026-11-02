@@ -1,0 +1,6 @@
+# Not measured on an OP-1 yet: an estimate with room, so that Opus does not switch erdtree off on chords before it is
+# measured. Six voices with all three sections run 132,300 instructions a block in GDB's Blackfin simulator
+# (opus/test/cycles); the tables the voices read every sample are in fast memory, so little is added for memory.
+# Replace it with the device's figure: developer mode on, six-note chords on "leyndell hall", then "audio: worst N" in
+# its details (the mods list, orange push on its row).
+cycles 200000

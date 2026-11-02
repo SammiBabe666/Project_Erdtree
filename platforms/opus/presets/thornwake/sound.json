@@ -1,0 +1,26 @@
+{
+  "name": "thornwake",
+  "description": "Sharp and restless: bowed strings close up and dry, plucked short, with a brass bite on every note.",
+  "knobs": {
+    "choir": 0,
+    "strings": 32767,
+    "space": 0,
+    "brass": 19000
+  },
+  "adsr": [
+    64,
+    3000,
+    13000,
+    1400
+  ],
+  "fx": {
+    "type": "grid",
+    "params": [
+      3000,
+      4000,
+      16000,
+      9000
+    ]
+  },
+  "octave": 0
+}

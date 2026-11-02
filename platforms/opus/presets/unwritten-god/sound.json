@@ -1,0 +1,26 @@
+{
+  "name": "the unwritten god",
+  "description": "Vast and unsettled: the whole choir and the brass at once, as far away as erdtree goes, an octave down, swelling over seconds while the brass's tone slides with it, into the delay.",
+  "knobs": {
+    "choir": 32767,
+    "strings": 6000,
+    "space": 32767,
+    "brass": 24000
+  },
+  "adsr": [
+    12000,
+    16000,
+    30000,
+    16000
+  ],
+  "fx": {
+    "type": "delay",
+    "params": [
+      5000,
+      32767,
+      16384,
+      30000
+    ]
+  },
+  "octave": -1
+}
