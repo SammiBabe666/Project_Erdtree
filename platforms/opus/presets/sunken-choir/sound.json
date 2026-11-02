@@ -1,0 +1,26 @@
+{
+  "name": "the sunken choir",
+  "description": "Dense and breathing: the full choir far away and dark, its breath at its deepest, strings underneath.",
+  "knobs": {
+    "choir": 32767,
+    "strings": 12000,
+    "space": 32767,
+    "brass": 0
+  },
+  "adsr": [
+    8000,
+    16000,
+    32767,
+    15000
+  ],
+  "fx": {
+    "type": "spring",
+    "params": [
+      16448,
+      16448,
+      12000,
+      20000
+    ]
+  },
+  "octave": 0
+}

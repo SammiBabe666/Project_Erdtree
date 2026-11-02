@@ -1,0 +1,45 @@
+erdtree for Opus 2: a dark-fantasy orchestra engine for the original OP-1 (firmware 246) running Opus 2
+Blue choir, green strings, white space, orange brass, with an animated tree on T1.
+
+This zip is for Opus 2 only. For the Hundekraft Workshop, download erdtree-hundekraft.zip instead: its plugin and
+its presets do not work on Opus, and these do not work on the Workshop.
+
+THE ENGINE  (Opus 2/erdtree.opmod, version 0.6.1, needs Opus core 2.8 or later)
+  1. Disk mode: press Shift + COM, then T3, and connect the OP-1.
+  2. Copy erdtree.opmod into the disk's "mods" folder. Eject, then switch the OP-1 off and on.
+  3. Opus's menu (hold synth + drum + tape + mixer), then T2 for the mods list: erdtree's row says "loaded".
+  4. In synth mode press Shift + T1 and choose erdtree.
+  Its setting "screen" (the mods list, blue push on erdtree's row): animated, or still to draw the picture only when
+  a knob moves, which uses less CPU.
+  If erdtree is silent: switch developer mode on (Opus's menu, T1) and play again. If it sounds then, Opus was
+  switching it off for going over its CPU figure: send the "audio: worst N" from its details (orange push on its row).
+  If anything goes wrong, hold Stop while switching the OP-1 on (no plugins load), then delete the file.
+
+THE PRESETS  (presets/synth/erdtree, eight sounds made for Opus)
+  Install the engine first. In disk mode, copy the "erdtree" folder from presets/synth into the OP-1 disk's synth/
+  folder, so the files end up in synth/erdtree/ (for example synth/erdtree/crown of ash.aif). If that folder holds
+  erdtree's older Hundekraft presets (first grace, golden order and so on), delete those first: they do not load on
+  Opus. Eject; the OP-1 syncs the files and waits for a key press. To play them: in synth mode hold Shift and press a
+  sound key, turn blue to the erdtree folder and green to the preset.
+
+  crown of ash         majestic, warm brass over strings, solemn
+  the hollow belfry    struck brass and choir ringing out with no sustain, far away (bell-like)
+  thornwake            sharp, dry, short bowed strings with a brass bite
+  vesperglass          the choir's harmonics alone, an octave up, shimmering
+  the sunken choir     the full choir, far and dark, breathing, strings beneath
+  grave of giants      brass near full an octave down, celli under it
+  moonless vigil       quiet on purpose: soft, distant strings and a breath of choir
+  the unwritten god    choir and brass at once, as far as it goes, an octave down, swelling for seconds
+
+THE ENCODERS
+  Blue    choir    spectral voices with a slow breath and shimmer       leaves fall from the crown
+  Green   strings  detuned violins and celli, bowed swell, vibrato      the crown grows and sways
+  White   space    distance: wider, darker, slower, deeper breath       more stars, twinkling
+  Orange  brass    the Brassophone horn, brighter with more brass       shafts of light break through
+  Blue, green and orange are section levels: all three at zero is silence. White is not a reverb; put one on the
+  synth's effect slot for a hall. T2 (envelope), T3 (effect) and T4 (LFO) are the OS's own.
+
+LICENCE
+  GPL-3.0-or-later with the OP-1 firmware permission (LICENSE, NOTICE). The source is at
+  https://github.com/SammiBabe666/Project_Erdtree. Brass voice from Brassophone by nick (nvmsocool).
+  An unofficial fan work: Elden Ring and the Erdtree belong to FromSoftware and Bandai Namco.

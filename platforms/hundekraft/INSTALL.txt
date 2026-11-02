@@ -1,0 +1,30 @@
+erdtree for the Hundekraft Workshop: an Elden Ring-inspired synth engine for the original OP-1 (firmware 246)
+Blue choir, green strings, white space, orange brass, with an animated Erdtree on T1.
+
+This zip is for the Hundekraft Workshop 3.0.x only. For Opus 2, download erdtree-opus.zip instead: its plugin and
+its presets do not work on the Workshop, and these do not work on Opus.
+
+THE ENGINE  (Hundekraft Workshop/erdtree.knl, version 0.5)
+  1. Open the Workshop (https://hundekraft.github.io/op1-workshop/) with an OP-1 that runs Workshop 3.0.
+  2. Add erdtree.knl under "Your plugins", press "Update OP-1", read the review, send, and press T1 on the OP-1.
+  3. After the restart, open synth, press Shift + T1 and choose erdtree.
+
+THE PRESETS  (presets/synth/erdtree, 8 sounds)
+  Install erdtree first. In disk mode (Shift + COM, then T3), copy the "erdtree" folder from presets/synth into the
+  OP-1 disk's synth/ folder, so the files end up in synth/erdtree/ (for example synth/erdtree/first grace.aif). Eject;
+  the OP-1 syncs them and waits for a key press. To play them: in synth mode hold Shift and press a sound key, turn
+  blue to the erdtree folder and green to the preset. The OP-1 keeps 300 user synth presets in all; past that the
+  sync drops the extra ones.
+
+THE ENCODERS
+  Blue    choir    spectral voices with a slow breath and shimmer       leaves fall from the crown
+  Green   strings  detuned violins and celli, bowed swell, vibrato      the crown grows and sways
+  White   space    distance: wider, darker, slower, deeper breath       more stars, twinkling
+  Orange  brass    the Brassophone horn, brighter with more brass       shafts of light break through
+  Blue, green and orange are section levels: all three at zero is silence. White is not a reverb; put one on the
+  synth's effect slot for a hall. T2 (envelope), T3 (effect) and T4 (LFO) are the OS's own.
+
+LICENCE
+  GPL-3.0-or-later with the OP-1 firmware permission (LICENSE, NOTICE). The source is at
+  https://github.com/SammiBabe666/Project_Erdtree. Brass voice from Brassophone by nick (nvmsocool).
+  Elden Ring and the Erdtree belong to FromSoftware and Bandai Namco: this is an unofficial fan tribute.

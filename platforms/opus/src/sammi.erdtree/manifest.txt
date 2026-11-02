@@ -1,0 +1,14 @@
+# sammi.erdtree: erdtree (Project ERD), an Elden Ring-inspired synth engine: blue choir, green strings, white space,
+# orange brass, with the Erdtree over the ruins of Leyndell on T1. The sound of erdtree v0.5 for op1r and the
+# Hundekraft Workshop, ported to Opus 2's engine service. Sounds and presets made with erdtree on op1r or the Workshop
+# ("type": "erdtree") load as this engine. core 2.8: opus_alloc_audio and opus_page_still.
+# 0.6.1: the voices' tables in fast memory and the audio pool, the screen drawn about 10 times a second, a CPU figure
+# with room, the "screen" setting (still: drawn only when a knob moves).
+opmod     1
+id        sammi.erdtree
+name      Erdtree
+author    sammi
+version   0.6.1
+core      2.8
+adds      engine erdtree
+setting   screen animated,still animated "screen"
